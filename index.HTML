@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nayanta University Monitoring</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f2f2f2;
+margin:0;
+padding:0;
+}
+
+.container{
+width:95%;
+margin:auto;
+background:white;
+padding:20px;
+}
+
+.header{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.date{
+float:right;
+font-size:14px;
+}
+
+.info{
+font-size:18px;
+margin:10px 0;
+}
+
+.whatsapp{
+color:#2e7d32;
+font-weight:bold;
+}
+
+.live{
+color:#ff8c00;
+font-weight:bold;
+}
+
+.cameras{
+background:#d6f5d6;
+padding:8px;
+font-weight:bold;
+}
+
+.section{
+border:1px solid #777;
+margin-top:25px;
+}
+
+.section-title{
+background:#e6f4ea;
+padding:6px;
+font-weight:bold;
+color:#008000;
+position:sticky;
+top:0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+table tr:hover{
+background:#f5f5f5;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+th{
+background:#333;
+color:white;
+}
+
+.green{
+background:#9cff9c;
+}
+
+.red{
+background:#ff8f8f;
+}
+
+.yellow{
+background:#ffd966;
+font-weight:bold;
+}
+
+.kvms{
+background:#ffd633;
+padding:3px 8px;
+font-weight:bold;
+}
+
+.section{
+border:1px solid #777;
+margin-top:15px;
+}
+
+.section-title{
+background:#e6f4ea;
+padding:6px;
+font-weight:bold;
+color:#008000;
+}
+
+.rule{
+padding:6px;
+border-top:1px solid #ccc;
+}
+
+.alert{
+color:red;
+font-weight:bold;
+}
+
+.allowed{
+background:#4CAF50;
+color:white;
+font-weight:bold;
+padding:3px 6px;
+border-radius:4px;
+}
+
+th{
+background:#333;
+color:white;
+position:sticky;
+top:0;
+z-index:1;
+}
+
+.camera{
+background:#e3f2fd;
+font-weight:bold;
+padding:3px 6px;
+border-radius:4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="header">
+Nayanta University
+</div>
+
+<div class="info whatsapp">
+• Whatsapp Report time:- 24 Hours X 7 Days
+</div>
+
+<div class="info live">
+• Live view :- 24 hours
+</div>
+
+
+<div class="cameras">
+Camera No. :- 1 to 50 
+<span class="kvms">Smart PSS</span>
+</div>
+
+
+<!-- Security Guard Monitoring -->
+
+<div class="section">
+
+<div class="section-title">
+<div class="section-title">🚨 Security Guard Monitoring</div>
+</div>
+
+<table style="width:100%; border-collapse:collapse;">
+
+<tr style="background:#f0f8f0; font-weight:bold;">
+<td style="border:1px solid #ccc; padding:8px;">Activity</td>
+<td style="border:1px solid #ccc; padding:8px;">Camera No.</td>
+<td style="border:1px solid #ccc; padding:8px;">Time</td>
+<td style="border:1px solid #ccc; padding:8px;">Action</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Security Guard Slept</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">1 Minute</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Security Guard Talking</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">2 Minutes</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Tobacco Usage</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">Allowed</td>
+<td style="border:1px solid #ccc; padding:8px;">No Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Security Guard not taking round</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">15 Minutes</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Basement & Staircases not checked</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">30 Minutes</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;"><b>Person Entry / Exit</b><br>
+If person enters or exits gate without security guard</td>
+<td style="border:1px solid #ccc; padding:8px;">34</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;"><b>Security Guard Absence</b><br>
+If guard absent more than <b>15 minutes</b></td>
+<td style="border:1px solid #ccc; padding:8px;">34</td>
+<td style="border:1px solid #ccc; padding:8px;">15 minutes</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;"><b>Material Movement</b><br>
+If asset moves out without security check</td>
+<td style="border:1px solid #ccc; padding:8px;">34</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Workers entering premises without register entry or ID card
+<td style="border:1px solid #ccc; padding:8px;">34</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Night shift for -→ <b>1 male security guards and 1 female security guard they are there all day.</b> 
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">-</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+<!-- Basement Monitoring Table -->
+
+<div class="section">
+
+<div class="section-title">
+<div class="section-title">🏢 Basement Monitoring</div>
+</div>
+
+<table style="width:100%; border-collapse:collapse;">
+
+<tr style="background:#f0f8f0; font-weight:bold;">
+<td style="border:1px solid #ccc; padding:8px;">Camera</td>
+<td style="border:1px solid #ccc; padding:8px;">Situation</td>
+<td style="border:1px solid #ccc; padding:8px;">Time</td>
+<td style="border:1px solid #ccc; padding:8px;">Action</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">
+If any person is present in the basement between <b>10:00 PM – 06:00 AM</b>, apart from ambulance driver or security guard
+</td>
+<td style="border:1px solid #ccc; padding:8px;">10:00 PM – 06:00 AM</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Send Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">
+If ambulance moves out of premises</td>
+<td style="border:1px solid #ccc; padding:8px;">10:00 PM – 06:00 AM</td>
+<td style="border:1px solid #ccc; padding:8px;" class="alert">Post Report</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Camera 01</td>
+<td style="border:1px solid #ccc; padding:8px;">
+Vehicles or persons waiting at gate because security guard opened late
+</td>
+<td style="border:1px solid #ccc; padding:8px;">Anytime</td>
+<td style="border:1px solid #ccc; padding:8px;">No Report Required</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">1, 2, 3, 4, 5, 6, 29</td>
+<td style="border:1px solid #ccc; padding:8px;">
+Anyone standing or peeping inside the basement gate</td>
+<td style="border:1px solid #ccc; padding:8px;">Anytime</td>
+<td style="border:1px solid #ccc; padding:8px;">No Report Required</td>
+</tr>
+  
+</table>
+
+
+</div>
+
+
+<!-- Staff -->
+
+<div class="section">
+
+<div class="section-title">
+Staff Activity
+</div>
+
+<div class="rule">
+If security / housekeeping sit idle more than <b>10 minutes</b> → <span class="alert">Post Report</span>
+</div>
+
+<div class="rule">
+Report any suspicious activity beyond mentioned points. (chaos, littering, spitting, property damage)
+</div>
+
+
+</div>
+
+
+
+<!-- Gate -->
+
+<div class="section">
+
+<div class="section-title">
+Camera No. 7 & 8 – Gate Entry
+</div>
+
+<div class="rule">
+People are allowed to enter the gate from <b>9:00 AM to 7:00 PM</b> without a student.
+</div>
+
+<div class="rule">
+From <b>7:00 PM to 9:00 AM</b>, if anyone enters the gate → <span class="alert">Post Report</span>
+</div>
+
+</div>
+
+
+<!-- Lift -->
+
+<div class="section">
+
+<div class="section-title">
+Camera No. 40, 41, 48 – (Lift – 4th, 5th & 6th Floor)
+</div>
+
+<div class="rule">
+Students <span class="alert">NOT allowed</span> to use lift or staircase.
+</div>
+
+<div class="rule">
+Workers are allowed to enter.
+</div>
+
+<div class="rule">
+Movement in restricted areas (4th floor, 5th floor, terrace, unused staircases) → 
+<span class="alert">Report</span>
+</div>
+
+</div>
+
+
+<!-- Behavior -->
+
+<div class="section">
+
+<div class="section-title">
+Inappropriate Behavior
+</div>
+
+<div class="rule">
+Aggression, sexual harassment or suspicious behavior in <b>lift</b> → 
+<span class="alert">Report</span>
+</div>
+
+
+<div class="rule">
+Kissing, sexual activity or inappropriate touching → 
+<span class="allowed">Send Photo report</span>
+</div>
+
+<!-- Training Video Button -->
+
+<div style="margin:15px 0;">
+
+<a href="https://workdrive.zoho.in/file/8n0y2a79583bd56a742f9993fd9e845fc8a60" target="_blank">
+
+<button style="background:#c62828;color:white;padding:10px 18px;border:none;border-radius:5px;font-size:16px;cursor:pointer;">
+▶ Watch Example Video
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Student Monitoring Rules -->
+
+<div class="section">
+
+<div class="section-title">
+<div class="section-title">🎓 Student Monitoring</div>
+</div>
+
+<table style="width:100%; border-collapse:collapse;">
+
+<tr style="background:#f0f8f0; font-weight:bold;">
+<td style="border:1px solid #ccc; padding:8px;">Category</td>
+<td style="border:1px solid #ccc; padding:8px;">Camera No.</td>
+<td style="border:1px solid #ccc; padding:8px;">Rule</td>
+<td style="border:1px solid #ccc; padding:8px;">Time</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Student Gate Monitoring</td>
+<td style="border:1px solid #ccc; padding:8px;">34</td>
+<td style="border:1px solid #ccc; padding:8px;">If any student enters or exits the gate → <span class="alert">Post Report</span></td>
+<td style="border:1px solid #ccc; padding:8px;">10:00 PM – 05:00 AM</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Balcony Monitoring</td>
+<td style="border:1px solid #ccc; padding:8px;">15, 18, 20, 22, 40, 41, 48</td>
+<td style="border:1px solid #ccc; padding:8px;">If any student accesses the balcony → <span class="alert">Post Report</span></td>
+<td style="border:1px solid #ccc; padding:8px;">12:00 AM – 05:00 AM</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">1st Floor (Girls Floor)</td>
+<td style="border:1px solid #ccc; padding:8px;">11, 18</td>
+<td style="border:1px solid #ccc; padding:8px;">Monitor staircase and lobby<br>
+If any male candidate entering <b>1st Floor (Girls Floor) → <span class="alert">Post Report</span></td>
+<td style="border:1px solid #ccc; padding:8px;">After 11:00 PM</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">2nd Floor (Boys Floor)</td>
+<td style="border:1px solid #ccc; padding:8px;">12, 20</td>
+<td style="border:1px solid #ccc; padding:8px;">Monitor staircase and lobby<br>
+If any Female candidate entering <b>2nd Floor (Boys Floor) → <span class="alert">Post Report</span></td>
+<td style="border:1px solid #ccc; padding:8px;">After 11:00 PM</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">Ground Floor</td>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">There is <b>no time restriction</b> while students are inside the premises.</td>
+<td style="border:1px solid #ccc; padding:8px;">After 11:00 PM</td>
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+<!-- General Monitoring -->
+
+<div class="section">
+
+<div class="section-title">
+General Monitoring
+</div>
+
+<table style="width:100%; border-collapse:collapse;">
+
+<tr style="background:#f0f8f0; font-weight:bold;">
+<td style="border:1px solid #ccc; padding:8px;">Camera No.</td>
+<td style="border:1px solid #ccc; padding:8px;">Rule</td>
+<td style="border:1px solid #ccc; padding:8px;">Time</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">
+If anyone is seen using tobacco, smoking, alcohol, etc. → 
+<span class="alert">Post Report</span>
+</td>
+<td style="border:1px solid #ccc; padding:8px;">Anytime</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc; padding:8px;">-</td>
+<td style="border:1px solid #ccc; padding:8px;">
+If any abnormal or suspicious activity is observed → 
+<span class="alert">Post Report</span>
+</td>
+<td style="border:1px solid #ccc; padding:8px;">10:00 PM – 05:00 AM</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Ambulance Driver Identification -->
+
+<div class="section">
+
+<div class="section-title">
+Ambulance Driver (Allowed Person)
+</div>
+
+<div class="rule">
+Ambulance driver sleeping in the basement area is <span class="ok">ALLOWED</span>.  
+Do not send a report if this person is seen resting.
+</div>
+
+
+<div style="display:flex; gap:20px; flex-wrap:wrap; padding:10px;">
+
+<div style="text-align:center;">
+<img src="https://download-accl.zoho.in/webdownload?x-service=writer&event-id=j7539dd45b9a1c0e34ae2974e7221b48dc199&x-cli-msg={%22imgurl%22:%22r-j7539dd45b9a1c0e34ae2974e7221b48dc199-ce27bf7696794466963f8d3be30297faszp1we3g2aee%22,%22rid%22:%22j7539dd45b9a1c0e34ae2974e7221b48dc199%22,%22module%22:%22image%22}" style="width:200px; border:1px solid #ccc;">
+<br>Ambulance Driver - Reference Photo
+</div>
+
+<div style="text-align:center;">
+<img src="https://download-accl.zoho.in/webdownload?x-service=writer&event-id=j7539dd45b9a1c0e34ae2974e7221b48dc199&x-cli-msg={%22imgurl%22:%22r-j7539dd45b9a1c0e34ae2974e7221b48dc199-ce27bf7696794466963f8d3be30297faafbtkhi6fpwm%22,%22rid%22:%22j7539dd45b9a1c0e34ae2974e7221b48dc199%22,%22module%22:%22image%22}" style="width:200px; border:1px solid #ccc;">
+<br>Ambulance Driver - Night Camera View
+</div>
+
+</div>
+
+</div>
+
+<!-- Fire Staircase Monitoring -->
+
+<div class="section">
+
+<div class="section-title">
+Fire Staircase Door Monitoring
+</div>
+
+
+<div class="rule">
+Location : Fire Staircase Door (Example: 3rd Floor Fire Staircase)
+</div>
+
+<div style="text-align:center;">
+<img src=https://download-accl.zoho.in/webdownload?x-service=writer&event-id=j7539dd45b9a1c0e34ae2974e7221b48dc199&x-cli-msg={%22imgurl%22:%22r-j7539dd45b9a1c0e34ae2974e7221b48dc199-ce27bf7696794466963f8d3be30297fa5y2glkjuywam%22,%22rid%22:%22j7539dd45b9a1c0e34ae2974e7221b48dc199%22,%22module%22:%22image%22} style="width:200px; border:1px solid #ccc;">
+<br>
+
+<div class="rule">
+If a <b>general person</b> opens the staircase door and enters between 
+<b>10:00 PM – 05:00 AM</b> → 
+<span class="alert">Send Report</span>
+</div>
+
+<div class="rule">
+If the <b>security guard</b> opens the staircase door between 
+<b>10:00 PM – 05:00 AM</b> → 
+<span class="allowed">Allowed</span>
+</div>
+
+<div class="rule">
+Auditors should verify whether the person is a security guard before reporting.
+</div>
+
+</div>
+
+</div>
+
+<!-- Restriction Rules -->
+
+<div class="section">
+
+<div class="section-title">
+IP Massage
+</div>
+
+<div class="rule">
+If there is <b>no report for 4 hours</b>, post the following message in the group.
+</div>
+
+<div style="background:#f4f6f9; padding:12px; border:1px solid #ccc; margin:10px;">
+
+
+Dear Madam/Sir,<br><br>
+
+We monitored the live view from <b>____ to ____</b> and did not observe any abnormalities.  
+This is for your information.<br><br>
+
+Thanks & Regards<br>
+<b>iSurveillanz Team</b>
+
+
+
+</div>
+
+
+</div>
+
+<div class="section">
+
+<div class="section-title">
+Outdoor Monitoring
+</div>
+
+<div class="rule">
+Suspicious activity near building boundary or attempt to enter premises → 
+<span class="alert">Report</span>
+</div>
+
+<div class="rule">
+Any staff / student / worker outside building between 
+<b>10:00 PM – 06:00 AM</b> → 
+<span class="alert">Report</span>
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<div class="section-title">
+Staircase Monitoring – Backside
+</div>
+
+<div class="rule">
+Any movement from staircase into floors → 
+<span class="alert">Report</span>
+</div>
+
+<div class="rule">
+Movement in staircase between 
+<b>10:00 PM – 06:00 AM</b> → 
+<span class="alert">Report</span>
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<div class="section-title">
+Lift Lobby & Balcony Monitoring
+</div>
+
+<div class="rule"><b>Cameras:</b><span class="camera">11, 12, 13, 15, 18, 20, 22</span></div>
+
+<div class="rule">
+Suspicious activity such as standing on railing or climbing balcony → 
+<span class="alert">Report</span>
+</div>
+
+<div class="rule">
+<b>Cameras:</b> <span class="camera">15, 18, 20, 22, 40, 41, 48</span>
+</div>
+
+<div class="rule">
+Balcony access by students between 
+<b>12:00 AM – 05:00 AM</b> → 
+<span class="alert">Report</span>
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<div class="section-title">
+General Security Alerts
+</div>
+
+<div class="rule">Property damage or theft attempt → <span class="alert">Report</span></div>
+
+<div class="rule">Smoking, alcohol, tobacco use → <span class="alert">Report</span></div>
+
+<div class="rule">Carrying weapons (knife, rods, sticks) → <span class="alert">Report</span></div>
+
+<div class="rule">Person entering with face covered → <span class="alert">Report</span></div>
+
+<div class="rule">Unauthorized access to electrical panel room → <span class="alert">Report</span></div>
+
+<div class="rule">Interfering with fire panel or fire equipment → <span class="alert">Report</span></div>
+
+<div class="rule">Camera offline or tampering → <span class="alert">Report</span></div>
+
+<div class="rule">Night movement in restricted areas → <span class="alert">Report</span></div>
+
+<div class="rule">Accidents or medical emergencies → <span class="alert">Report</span></div>
+
+<div class="rule">Running, fighting or aggressive behavior → <span class="alert">Report</span></div>
+
+<div class="rule">Vehicle parked near hostel after <b>10:00 PM</b> → <span class="alert">Report</span></div>
+
+<div class="rule">Person fainting or lying motionless → <span class="alert">Report</span></div>
+
+<div class="rule">Overcrowding near exits → <span class="alert">Report</span></div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
